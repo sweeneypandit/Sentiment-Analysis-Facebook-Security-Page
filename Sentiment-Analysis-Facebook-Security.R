@@ -9,7 +9,7 @@ library(kableExtra)
 file<-file.choose()
 df<-read.csv(file)
 glimpse(df[2,])
-
+df<-df1
 #data cleaning of status column
 fix.contractions <- function(doc) {
   # "won't" is a special case as it does not expand to "wo not"
